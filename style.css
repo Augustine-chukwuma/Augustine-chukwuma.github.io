@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: o;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    background: #1b2b44;
+    color: #ffffff;
+}
+header{
+    background: #162235;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+}
+nav{
+display: flex;
+justify-content: space-between;
+align-items: center;  
+}
+nav ul{
+    display: flex;
+    gap:20px;
+    list-style: none;
+}
+nav a{
+    color: #ffffff;
+    text-decoration:none;
+}
+.hero{
+    position: relative;
+    background-image: url('splash.jpg') center/ cover no-repeat;
+    padding:80px 20px
+}
+.hero-over-lay{
+    position: absolute;
+    inset: 0;
+    background: rgba(22,34,53 , 0.85);
+}
+.hero-container{
+    position: relative;
+    max-width:auto ;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    display: flex;
+}
+.hero-text h2{
+    font-size: 2.6rem;
+}
+.hero-image img{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #2e4a7d;
+}
+.btn{
+    background: #2e4a7d;
+    padding: 10px 18px;
+    border-radius: 6px;
+    display: inline-block;
+    margin-top: 15px;
+    color: #fff;
+}
+section{
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px 20px;
+}
+.skill span,
+.project-card{
+    background: #263e66;
+    padding: 10px 15px;
+    border-radius: 6px;
+    margin: 6px;
+    display: inline-block;
+}
+.projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+.project-card{
+    color: #4fc3f7;
+}footer{
+    background: #162235;
+    text-align: center;
+    padding: 20px;
+}
+.contact-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.github-card form-card{
+    background: #263e66;
+    padding: 25px;
+    border-radius: 10px;
+    flex: 1 1 300px;
+    min-width: 300px;
+}
+.github-card h4, .form-card{
+    margin-bottom: 15px;
+}
+.form-card form input, .form-card form textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: none;
+    background: #1b2b44;
+    color: #fff;
+}
+.form-card form button{
+    background: #4caf50;
+    border: none;
+    padding: 12px;
+    color: #fff;
+    width: 100%;
+    border-radius: 6px;
+    cursor:pointer ;
+}
+.form-card form button:hover{
+    background: #4caf50;
+}
+footer{background: #162235;
+text-align: center;
+padding: 20px;
+}
+@media(max-width:768px){ .hero-container{flex-direction: column; text-align: center;} 
+nav ul{flex-direction: column; gap: 10px;}}
